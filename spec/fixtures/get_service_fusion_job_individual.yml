@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.servicefusion.com/v1/jobs/467303
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.1
+      Authorization:
+      - Bearer JRifMYMZEtjqSU6K2JXzVtGtNzIj3qC0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 19 Dec 2019 14:22:34 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      server:
+      - nginx/1.12.1
+      x-powered-by:
+      - PHP/5.6.35
+      access-control-expose-headers:
+      - ''
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"id":467303,"number":"467303","po_number":"1023, 1026, 1027","check_number":null,"priority":"Normal","description":"This
+        is a test job","tech_notes":null,"completion_notes":null,"customer_payment_terms":null,"payment_status":"Paid
+        in Full","taxes_fees_total":1200,"drive_labor_total":0,"billable_expenses_total":0,"total":1200,"payments_deposits_total":1200,"due_total":0,"cost_total":975,"duration":"1h","time_frame_promised_start":"08:00","time_frame_promised_end":"10:00","start_date":"2015-10-21","end_date":null,"created_at":"2015-10-21T16:28:23+00:00","updated_at":"2017-04-05T18:40:47+00:00","closed_at":"2015-10-21T16:28:30+00:00","customer_id":731220,"customer_name":"Anthony
+        Martin","parent_customer":null,"status":"Fully Processed","sub_status":null,"contact_first_name":"Anthony","contact_last_name":"Martin","street_1":"1212
+        Street","street_2":null,"city":"Keller","state_prov":"TX","postal_code":"76244","location_name":null,"is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":null,"note_to_customer":"Change
+        this message in My Office > Settings > Company Preferences","_expandable":["agents","custom_fields","pictures","documents","equipment","techs_assigned","tasks","notes","products","services","other_charges","labor_charges","expenses","payments","invoices","signatures","printable_work_order","visits","visits.techs_assigned"]}'
+    http_version: 
+  recorded_at: Thu, 19 Dec 2019 14:22:35 GMT
+recorded_with: VCR 5.0.0
