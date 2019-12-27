@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.servicefusion.com/v1/jobs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.1
+      Authorization:
+      - Bearer JRifMYMZEtjqSU6K2JXzVtGtNzIj3qC0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 19 Dec 2019 14:22:33 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      server:
+      - nginx/1.12.1
+      x-powered-by:
+      - PHP/5.6.35
+      access-control-expose-headers:
+      - ''
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '0'
+      x-pagination-total-count:
+      - '550'
+      x-pagination-page-count:
+      - '55'
+      x-pagination-current-page:
+      - '1'
+      x-pagination-per-page:
+      - '10'
+      access-control-allow-origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"id":467303,"number":"467303","po_number":"1023, 1026, 1027","check_number":null,"priority":"Normal","description":"This
+        is a test job","tech_notes":null,"completion_notes":null,"customer_payment_terms":null,"payment_status":"Paid
+        in Full","taxes_fees_total":1200,"drive_labor_total":0,"billable_expenses_total":0,"total":1200,"payments_deposits_total":1200,"due_total":0,"cost_total":975,"duration":"1h","time_frame_promised_start":"08:00","time_frame_promised_end":"10:00","start_date":"2015-10-21","end_date":null,"created_at":"2015-10-21T16:28:23+00:00","updated_at":"2017-04-05T18:40:47+00:00","closed_at":"2015-10-21T16:28:30+00:00","customer_id":731220,"customer_name":"Anthony
+        Martin","parent_customer":null,"status":"Fully Processed","sub_status":null,"contact_first_name":"Anthony","contact_last_name":"Martin","street_1":"1212
+        Street","street_2":null,"city":"Keller","state_prov":"TX","postal_code":"76244","location_name":null,"is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":null,"note_to_customer":"Change
+        this message in My Office > Settings > Company Preferences"},{"id":476171,"number":"476171","po_number":null,"check_number":null,"priority":"Normal","description":"Test
+        job for discounts","tech_notes":null,"completion_notes":null,"customer_payment_terms":null,"payment_status":"Paid
+        in Full","taxes_fees_total":60,"drive_labor_total":0,"billable_expenses_total":0,"total":60,"payments_deposits_total":60,"due_total":0,"cost_total":0,"duration":"1h","time_frame_promised_start":null,"time_frame_promised_end":null,"start_date":"2015-10-26","end_date":null,"created_at":"2015-10-26T14:50:38+00:00","updated_at":"2015-10-26T16:15:10+00:00","closed_at":"2015-10-26T14:50:45+00:00","customer_id":731220,"customer_name":"Anthony
+        Martin","parent_customer":null,"status":"Invoiced","sub_status":null,"contact_first_name":"Anthony","contact_last_name":"Martin","street_1":"1212
+        Street","street_2":null,"city":"Keller","state_prov":"TX","postal_code":"76244","location_name":null,"is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":null,"note_to_customer":"Change
+        this message in My Office > Settings > Company Preferences"},{"id":487060,"number":"487060","po_number":null,"check_number":null,"priority":"Normal","description":"This
+        is a test job","tech_notes":null,"completion_notes":null,"customer_payment_terms":null,"payment_status":"Paid
+        in Full","taxes_fees_total":150,"drive_labor_total":0,"billable_expenses_total":0,"total":150,"payments_deposits_total":150,"due_total":0,"cost_total":0,"duration":"1h","time_frame_promised_start":"15:00","time_frame_promised_end":"16:30","start_date":"2015-10-29","end_date":null,"created_at":"2015-10-29T10:46:42+00:00","updated_at":"2016-03-29T15:35:21+00:00","closed_at":"2015-10-29T10:46:48+00:00","customer_id":731229,"customer_name":"Brad
+        Smith","parent_customer":"American Home Shield","status":"Invoiced","sub_status":null,"contact_first_name":"Brad","contact_last_name":"Smith","street_1":null,"street_2":null,"city":null,"state_prov":null,"postal_code":null,"location_name":null,"is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":null,"note_to_customer":"Change
+        this message in My Office > Settings > Company Preferences"},{"id":487201,"number":"487201","po_number":null,"check_number":null,"priority":"Normal","description":"Second
+        test job and invoice","tech_notes":null,"completion_notes":null,"customer_payment_terms":"DUR","payment_status":"Paid
+        in Full","taxes_fees_total":99.9,"drive_labor_total":0,"billable_expenses_total":0,"total":99.9,"payments_deposits_total":99.9,"due_total":0,"cost_total":0,"duration":"1h","time_frame_promised_start":"08:30","time_frame_promised_end":"09:30","start_date":"2015-10-29","end_date":null,"created_at":"2015-10-29T12:28:51+00:00","updated_at":"2016-06-30T17:56:29+00:00","closed_at":"2015-10-29T12:28:58+00:00","customer_id":731229,"customer_name":"Brad
+        Smith","parent_customer":"American Home Shield","status":"Invoiced","sub_status":null,"contact_first_name":"Brad","contact_last_name":"Smith","street_1":"4455
+        Main Ave.","street_2":"Ste. 300","city":"Dallas","state_prov":"TX","postal_code":"75201","location_name":"My
+        Home","is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":null,"note_to_customer":"Change
+        this message in My Office > Settings > Company Preferences"},{"id":487287,"number":"487287","po_number":null,"check_number":null,"priority":"Normal","description":"Third
+        test job with invoice","tech_notes":null,"completion_notes":null,"customer_payment_terms":null,"payment_status":"Paid
+        in Full","taxes_fees_total":134.34,"drive_labor_total":0,"billable_expenses_total":0,"total":134.34,"payments_deposits_total":134.34,"due_total":0,"cost_total":0,"duration":"1h","time_frame_promised_start":"10:30","time_frame_promised_end":"11:30","start_date":"2015-10-29","end_date":null,"created_at":"2015-10-29T13:22:36+00:00","updated_at":"2015-10-29T13:22:36+00:00","closed_at":"2015-10-29T13:22:42+00:00","customer_id":760210,"customer_name":"Larry
+        Stewart","parent_customer":"ABC Property Management","status":"Invoiced","sub_status":null,"contact_first_name":"Larry","contact_last_name":"Stewart","street_1":"216
+        Londonberry Terrace","street_2":"Apt # 222","city":"Colleyville","state_prov":"TX","postal_code":"76034","location_name":"My
+        Home 1","is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":null,"note_to_customer":"Change
+        this message in My Office > Settings > Company Preferences"},{"id":488641,"number":"488641","po_number":"234234","check_number":null,"priority":"Normal","description":"This
+        is a test job","tech_notes":"Here is a note for my techs\n","completion_notes":null,"customer_payment_terms":null,"payment_status":"Paid
+        in Full","taxes_fees_total":2530,"drive_labor_total":0,"billable_expenses_total":0,"total":2530,"payments_deposits_total":2530,"due_total":0,"cost_total":33,"duration":"3h","time_frame_promised_start":"06:00","time_frame_promised_end":"09:00","start_date":"2015-10-30","end_date":null,"created_at":"2015-10-30T00:27:00+00:00","updated_at":"2017-05-23T17:31:55+00:00","closed_at":"2015-10-30T00:31:39+00:00","customer_id":763961,"customer_name":"SMI
+        Corp","parent_customer":"XYZ Corporation","status":"Invoiced","sub_status":null,"contact_first_name":"Jack","contact_last_name":"Johnson","street_1":"9588
+        Elm Street","street_2":null,"city":"Irving","state_prov":"TX","postal_code":"75038","location_name":"Home","is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":"Furniture
+        Medic Standard Contract","note_to_customer":"Change this message in My Office
+        > Settings > Company Preferences"},{"id":512379,"number":"512379","po_number":null,"check_number":null,"priority":"Normal","description":"Another
+        test job","tech_notes":null,"completion_notes":null,"customer_payment_terms":"DUR","payment_status":"Paid
+        in Full","taxes_fees_total":195,"drive_labor_total":0,"billable_expenses_total":45,"total":240,"payments_deposits_total":240,"due_total":0,"cost_total":110,"duration":"1h","time_frame_promised_start":"08:00","time_frame_promised_end":"09:00","start_date":"2015-11-06","end_date":null,"created_at":"2015-11-06T11:18:18+00:00","updated_at":"2017-05-23T17:31:55+00:00","closed_at":"2015-11-06T11:18:31+00:00","customer_id":763961,"customer_name":"SMI
+        Corp","parent_customer":"XYZ Corporation","status":"Invoiced","sub_status":null,"contact_first_name":"Jack","contact_last_name":"Johnson","street_1":"9588
+        Elm Street","street_2":null,"city":"Irving","state_prov":"TX","postal_code":"75038","location_name":"Home","is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":null,"note_to_customer":"Change
+        this message in My Office > Settings > Company Preferences"},{"id":512387,"number":"512387","po_number":"234234","check_number":null,"priority":"Normal","description":"This
+        is a test job","tech_notes":null,"completion_notes":null,"customer_payment_terms":null,"payment_status":"Unpaid","taxes_fees_total":700,"drive_labor_total":0,"billable_expenses_total":0,"total":700,"payments_deposits_total":150,"due_total":550,"cost_total":300,"duration":"1h","time_frame_promised_start":"11:15","time_frame_promised_end":"11:45","start_date":"2017-08-08","end_date":null,"created_at":"2015-11-06T11:23:40+00:00","updated_at":"2017-08-07T12:16:32+00:00","closed_at":null,"customer_id":851306,"customer_name":"Job
+        #12345","parent_customer":"XYZ Corporation","status":"Invoiced","sub_status":"Parts
+        On Order","contact_first_name":"John","contact_last_name":"Smith","street_1":"123
+        Main Sreet","street_2":null,"city":"Dallas","state_prov":"TX","postal_code":"75201","location_name":null,"is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":null,"note_to_customer":"Change
+        this message in My Office > Settings > Company Preferences"},{"id":512400,"number":"512400","po_number":null,"check_number":null,"priority":"Normal","description":"as
+        dasd","tech_notes":"asda asdsa dad\n","completion_notes":null,"customer_payment_terms":"DUR","payment_status":"Unpaid","taxes_fees_total":0,"drive_labor_total":0,"billable_expenses_total":0,"total":0,"payments_deposits_total":0,"due_total":0,"cost_total":0,"duration":"1h","time_frame_promised_start":"10:00
+        am","time_frame_promised_end":"11:30 am","start_date":"2017-11-30","end_date":null,"created_at":"2015-11-06T11:40:49+00:00","updated_at":"2017-11-30T14:53:50+00:00","closed_at":null,"customer_id":763960,"customer_name":"XYZ
+        Corporation","parent_customer":null,"status":"Scheduled","sub_status":"Another
+        Won Status","contact_first_name":"Jonathan","contact_last_name":"Edwards","street_1":"7322
+        Main Street","street_2":"Ste. #2334","city":"Dallas","state_prov":"TX","postal_code":"75201","location_name":"Headquarters","is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":null,"note_to_customer":"Change
+        this message in My Office > Settings > Company Preferences"},{"id":512418,"number":"512418","po_number":null,"check_number":null,"priority":"Normal","description":"This
+        is a sample\n\nMore description can go here","tech_notes":null,"completion_notes":null,"customer_payment_terms":null,"payment_status":"Paid
+        in Full","taxes_fees_total":1035.02,"drive_labor_total":0,"billable_expenses_total":39,"total":1074.02,"payments_deposits_total":1074.02,"due_total":0,"cost_total":0,"duration":"1h","time_frame_promised_start":"12:00","time_frame_promised_end":"13:00","start_date":"2016-09-08","end_date":null,"created_at":"2015-11-06T11:52:47+00:00","updated_at":"2016-09-08T11:21:07+00:00","closed_at":"2016-09-08T11:34:48+00:00","customer_id":763961,"customer_name":"SMI
+        Corp","parent_customer":"XYZ Corporation","status":"Invoiced","sub_status":null,"contact_first_name":"Jack","contact_last_name":"Johnson","street_1":"9588
+        Elm Street","street_2":null,"city":"Irving","state_prov":"TX","postal_code":"75038","location_name":"Home","is_gated":false,"gate_instructions":null,"category":null,"source":null,"payment_type":null,"project":null,"phase":null,"contract":null,"note_to_customer":"Change
+        this message in My Office > Settings > Company Preferences"}],"_expandable":["agents","custom_fields","pictures","documents","equipment","techs_assigned","tasks","notes","products","services","other_charges","labor_charges","expenses","payments","invoices","signatures","printable_work_order","visits","visits.techs_assigned"],"_meta":{"totalCount":550,"pageCount":55,"currentPage":1,"perPage":10}}'
+    http_version: 
+  recorded_at: Thu, 19 Dec 2019 14:22:33 GMT
+recorded_with: VCR 5.0.0

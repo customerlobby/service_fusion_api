@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.servicefusion.com/v1/customers/731219
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.1
+      Authorization:
+      - Bearer JRifMYMZEtjqSU6K2JXzVtGtNzIj3qC0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 19 Dec 2019 14:22:30 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      server:
+      - nginx/1.12.1
+      x-powered-by:
+      - PHP/5.6.35
+      access-control-expose-headers:
+      - ''
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"id":731219,"customer_name":"ABC Corporation","fully_qualified_name":"ABC
+        Corporation","account_number":"40004","account_balance":8038.8,"private_notes":null,"public_notes":null,"payment_terms":"DUR","discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":19,"qbd_id":"80000005-1567185645","created_at":"2015-10-21T20:58:14+00:00","updated_at":"2019-09-03T09:28:25+00:00","last_serviced_date":"2017-10-18","is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":null,"referral_source":null,"agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":"TX
+        State Sales Tax","industry":null,"_expandable":["contacts","contacts.phones","contacts.emails","locations","custom_fields"]}'
+    http_version: 
+  recorded_at: Thu, 19 Dec 2019 14:22:30 GMT
+recorded_with: VCR 5.0.0

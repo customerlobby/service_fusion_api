@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.servicefusion.com/v1/customers?expand=contacts%2Clocations%2Ccontacts.phones%2Ccontacts.emails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.1
+      Authorization:
+      - Bearer JRifMYMZEtjqSU6K2JXzVtGtNzIj3qC0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 19 Dec 2019 14:22:28 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      server:
+      - nginx/1.12.1
+      x-powered-by:
+      - PHP/5.6.35
+      access-control-expose-headers:
+      - ''
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '0'
+      x-pagination-total-count:
+      - '247'
+      x-pagination-page-count:
+      - '25'
+      x-pagination-current-page:
+      - '1'
+      x-pagination-per-page:
+      - '10'
+      access-control-allow-origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"id":731219,"customer_name":"ABC Corporation","fully_qualified_name":"ABC
+        Corporation","account_number":"40004","account_balance":8038.8,"private_notes":null,"public_notes":null,"payment_terms":"DUR","discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":19,"qbd_id":"80000005-1567185645","created_at":"2015-10-21T20:58:14+00:00","updated_at":"2019-09-03T09:28:25+00:00","last_serviced_date":"2017-10-18","is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":null,"referral_source":null,"agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":"TX
+        State Sales Tax","industry":null,"contacts":[{"prefix":null,"fname":"Sam","lname":"Smith","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":null,"updated_at":"2019-09-03T09:28:25+00:00","is_primary":true,"phones":[{"phone":"555-555-1234","ext":null,"type":"Mobile","created_at":"2019-09-03T09:28:25+00:00","updated_at":"2019-09-03T09:28:25+00:00","is_mobile":true}],"emails":[{"email":"samsmith1@servicefusion.com","class":"Personal","types_accepted":null,"created_at":null,"updated_at":"2019-09-03T09:28:25+00:00"}]}],"locations":[{"street_1":"112233
+        Main Ave","street_2":"Ste. 111","city":"Dallas","state_prov":"TX","postal_code":"75201","country":null,"nickname":null,"gate_instructions":null,"latitude":0,"longitude":0,"location_type":null,"created_at":null,"updated_at":null,"is_primary":true,"is_gated":false,"is_bill_to":true,"customer_contact":"Sam
+        Smith"}]},{"id":731220,"customer_name":"Anthony Martin","fully_qualified_name":"Anthony
+        Martin","account_number":"40000","account_balance":0,"private_notes":null,"public_notes":null,"payment_terms":null,"discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":null,"qbd_id":"800000EA-1702626876","created_at":"2015-10-21T20:58:15+00:00","updated_at":"2015-10-21T20:58:15+00:00","last_serviced_date":"2015-10-26","is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":null,"referral_source":null,"agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":null,"industry":null,"contacts":[{"prefix":null,"fname":"Anthony","lname":"Martin","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":null,"updated_at":null,"is_primary":true,"phones":[{"phone":"682-248-5897","ext":null,"type":"Mobile","created_at":null,"updated_at":"2017-04-05T18:40:47+00:00","is_mobile":true}],"emails":[{"email":null,"class":null,"types_accepted":null,"created_at":null,"updated_at":null}]}],"locations":[{"street_1":"1212
+        Street","street_2":null,"city":"Keller","state_prov":"TX","postal_code":"76244","country":null,"nickname":null,"gate_instructions":null,"latitude":0,"longitude":0,"location_type":null,"created_at":null,"updated_at":null,"is_primary":true,"is_gated":false,"is_bill_to":true,"customer_contact":"Anthony
+        Martin"}]},{"id":731229,"customer_name":"Brad Smith","fully_qualified_name":"American
+        Home Shield:Brad Smith","account_number":"40000","account_balance":0,"private_notes":null,"public_notes":null,"payment_terms":"DUR","discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":null,"qbd_id":"80000045-1567185785","created_at":"2015-10-21T21:12:16+00:00","updated_at":"2019-01-05T11:07:33+00:00","last_serviced_date":"2018-04-30","is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":"American
+        Home Shield","referral_source":null,"agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":"TX
+        State Sales Tax","industry":null,"contacts":[{"prefix":null,"fname":"Brad","lname":"Smith","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":null,"updated_at":"2019-01-05T11:07:33+00:00","is_primary":true,"phones":[{"phone":"(214)
+        557-6567","ext":null,"type":"Mobile","created_at":null,"updated_at":"2019-01-05T11:07:33+00:00","is_mobile":true}],"emails":[{"email":null,"class":"Personal","types_accepted":null,"created_at":null,"updated_at":"2019-01-05T11:07:33+00:00"}]}],"locations":[{"street_1":"4455
+        Main Ave.","street_2":"Ste. 300","city":"Dallas","state_prov":"TX","postal_code":"75201","country":null,"nickname":"My
+        Home","gate_instructions":null,"latitude":0,"longitude":0,"location_type":null,"created_at":null,"updated_at":"2015-10-29T12:25:13+00:00","is_primary":true,"is_gated":false,"is_bill_to":true,"customer_contact":"Brad
+        Smith"}]},{"id":731230,"customer_name":"ABC Property Management","fully_qualified_name":"ABC
+        Property Management","account_number":null,"account_balance":1096.88,"private_notes":null,"public_notes":null,"payment_terms":null,"discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":null,"qbd_id":"800000E2-1702626863","created_at":"2015-10-21T21:12:16+00:00","updated_at":"2015-10-29T13:20:49+00:00","last_serviced_date":null,"is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":null,"referral_source":null,"agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":null,"industry":null,"contacts":[{"prefix":null,"fname":"John","lname":"Jones","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":null,"updated_at":null,"is_primary":true,"phones":[{"phone":"(415)
+        819-9539","ext":null,"type":null,"created_at":null,"updated_at":null,"is_mobile":true}],"emails":[{"email":null,"class":null,"types_accepted":null,"created_at":null,"updated_at":null}]}],"locations":[{"street_1":"1516
+        Main Street","street_2":null,"city":"Keller","state_prov":null,"postal_code":"76248","country":null,"nickname":"Headquarters","gate_instructions":null,"latitude":0,"longitude":0,"location_type":null,"created_at":null,"updated_at":"2015-10-29T13:20:49+00:00","is_primary":true,"is_gated":false,"is_bill_to":true,"customer_contact":"John
+        Jones"}]},{"id":760210,"customer_name":"Larry Stewart","fully_qualified_name":"ABC
+        Property Management:Larry Stewart","account_number":"40000","account_balance":0,"private_notes":null,"public_notes":null,"payment_terms":"DUR","discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":null,"qbd_id":"80000134-1702626995","created_at":"2015-10-29T13:22:36+00:00","updated_at":"2015-10-30T15:24:47+00:00","last_serviced_date":"2015-10-29","is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":"ABC
+        Property Management","referral_source":"Google AdWords","agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":null,"industry":null,"contacts":[{"prefix":null,"fname":"Larry","lname":"Stewart","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":"2015-10-29T13:22:36+00:00","updated_at":"2015-10-30T15:24:47+00:00","is_primary":true,"phones":[{"phone":"(972)
+        555-7788","ext":null,"type":"Mobile","created_at":"2015-10-29T13:22:36+00:00","updated_at":"2015-10-30T15:24:47+00:00","is_mobile":true}],"emails":[{"email":"larry@servicefusion.com","class":"Personal","types_accepted":null,"created_at":"2015-10-29T13:22:36+00:00","updated_at":"2015-10-30T15:24:47+00:00"}]}],"locations":[{"street_1":"216
+        Londonberry Terrace NE","street_2":"Apt # 2223","city":"Colleyville City","state_prov":"Texas","postal_code":"76034-1234","country":null,"nickname":"My
+        Home 1","gate_instructions":null,"latitude":0,"longitude":0,"location_type":null,"created_at":null,"updated_at":"2015-10-30T10:30:01+00:00","is_primary":true,"is_gated":false,"is_bill_to":true,"customer_contact":null}]},{"id":763960,"customer_name":"XYZ
+        Corporation","fully_qualified_name":"XYZ Corporation","account_number":"40001","account_balance":6758.25,"private_notes":null,"public_notes":null,"payment_terms":"DUR","discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":27997,"qbd_id":"80000012-1567185699","created_at":"2015-10-30T00:19:22+00:00","updated_at":"2017-09-25T12:49:52+00:00","last_serviced_date":"2018-09-21","is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":null,"referral_source":null,"agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":"TX
+        State Sales Tax","industry":null,"contacts":[{"prefix":null,"fname":"Jonathan","lname":"Edwards","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":"2015-10-30T00:19:22+00:00","updated_at":"2017-09-25T12:49:52+00:00","is_primary":true,"phones":[{"phone":"(214)
+        555-1212","ext":null,"type":"Mobile","created_at":"2015-10-30T00:19:22+00:00","updated_at":"2017-09-25T12:49:52+00:00","is_mobile":true}],"emails":[{"email":"max@servicefusion.com","class":"Personal","types_accepted":null,"created_at":"2015-10-30T00:19:22+00:00","updated_at":"2017-09-25T12:49:52+00:00"},{"email":"12145949894@myfax.com","class":"Personal","types_accepted":null,"created_at":"2017-07-12T10:26:49+00:00","updated_at":"2017-09-25T12:49:52+00:00"}]}],"locations":[{"street_1":"7322
+        Main Street","street_2":"Ste. #2334","city":"Dallas","state_prov":"TX","postal_code":"75201","country":null,"nickname":"Headquarters","gate_instructions":null,"latitude":0,"longitude":0,"location_type":null,"created_at":"2015-10-30T00:19:55+00:00","updated_at":"2015-10-30T00:19:55+00:00","is_primary":true,"is_gated":false,"is_bill_to":true,"customer_contact":null}]},{"id":763961,"customer_name":"SMI
+        Corp","fully_qualified_name":"XYZ Corporation:SMI Corp","account_number":"40002","account_balance":5808.25,"private_notes":null,"public_notes":null,"payment_terms":"DUR","discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":null,"qbd_id":"8000008A-1567186090","created_at":"2015-10-30T00:27:00+00:00","updated_at":"2018-05-07T22:05:27+00:00","last_serviced_date":"2018-03-07","is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":"XYZ
+        Corporation","referral_source":null,"agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":"TX
+        State Sales Tax","industry":null,"contacts":[{"prefix":null,"fname":"Jack","lname":"Johnson","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":"2015-10-30T00:27:00+00:00","updated_at":"2018-05-07T22:05:27+00:00","is_primary":true,"phones":[{"phone":"(333)
+        555-1212","ext":null,"type":"Mobile","created_at":"2015-10-30T00:27:00+00:00","updated_at":"2018-05-07T22:05:27+00:00","is_mobile":true}],"emails":[{"email":"jack@jack.com","class":"Personal","types_accepted":null,"created_at":"2015-10-30T00:27:00+00:00","updated_at":"2018-05-07T22:05:27+00:00"}]},{"prefix":null,"fname":"Mack","lname":"Jackson","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":"2017-08-07T11:18:25+00:00","updated_at":"2018-05-07T22:05:27+00:00","is_primary":false,"phones":[{"phone":"2145551212","ext":null,"type":"Mobile","created_at":"2017-08-07T11:18:25+00:00","updated_at":"2018-05-07T22:05:27+00:00","is_mobile":true}],"emails":[{"email":null,"class":"Personal","types_accepted":null,"created_at":"2017-08-07T11:18:25+00:00","updated_at":"2018-05-07T22:05:27+00:00"}]}],"locations":[{"street_1":"9588
+        Elm Street","street_2":null,"city":"Irving","state_prov":"TX","postal_code":"75038","country":null,"nickname":"Home","gate_instructions":null,"latitude":0,"longitude":0,"location_type":null,"created_at":null,"updated_at":null,"is_primary":true,"is_gated":false,"is_bill_to":true,"customer_contact":null}]},{"id":851306,"customer_name":"Job
+        #12345","fully_qualified_name":"XYZ Corporation:Job #12345","account_number":"40003","account_balance":550,"private_notes":null,"public_notes":null,"payment_terms":"DUR","discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":null,"qbd_id":"80000127-1702626965","created_at":"2015-11-06T11:23:40+00:00","updated_at":"2015-11-06T11:23:40+00:00","last_serviced_date":"2017-08-08","is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":"XYZ
+        Corporation","referral_source":null,"agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":null,"industry":null,"contacts":[{"prefix":null,"fname":"John","lname":"Smith","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":"2015-11-06T11:23:40+00:00","updated_at":"2015-11-06T11:23:40+00:00","is_primary":true,"phones":[{"phone":"(214)
+        555-1212","ext":null,"type":"Mobile","created_at":"2015-11-06T11:23:40+00:00","updated_at":"2017-08-07T12:16:33+00:00","is_mobile":true}],"emails":[]}],"locations":[{"street_1":"123
+        Main Sreet","street_2":null,"city":"Dallas","state_prov":"TX","postal_code":"75201","country":null,"nickname":null,"gate_instructions":null,"latitude":0,"longitude":0,"location_type":null,"created_at":null,"updated_at":null,"is_primary":true,"is_gated":false,"is_bill_to":true,"customer_contact":null}]},{"id":851312,"customer_name":"Store
+        #12345","fully_qualified_name":"XYZ Corporation:Store #12345","account_number":"40004","account_balance":0,"private_notes":null,"public_notes":null,"payment_terms":"DUR","discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":null,"qbd_id":"80000155-1702627053","created_at":"2015-11-06T11:40:49+00:00","updated_at":"2015-11-06T11:40:49+00:00","last_serviced_date":null,"is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":"XYZ
+        Corporation","referral_source":null,"agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":null,"industry":null,"contacts":[{"prefix":null,"fname":"George","lname":"Smith","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":"2015-11-06T11:40:49+00:00","updated_at":"2015-11-06T11:40:49+00:00","is_primary":true,"phones":[{"phone":"(214)
+        555-1212","ext":null,"type":"Mobile","created_at":"2015-11-06T11:40:49+00:00","updated_at":"2015-11-06T11:40:49+00:00","is_mobile":true}],"emails":[]}],"locations":[{"street_1":"978
+        Main","street_2":null,"city":"Dallas","state_prov":"TX","postal_code":"75201","country":null,"nickname":null,"gate_instructions":null,"latitude":0,"longitude":0,"location_type":null,"created_at":null,"updated_at":null,"is_primary":true,"is_gated":false,"is_bill_to":true,"customer_contact":null}]},{"id":860695,"customer_name":"Johnny
+        Ives","fully_qualified_name":"ABC Corporation:Johnny Ives","account_number":"40005","account_balance":0,"private_notes":null,"public_notes":null,"payment_terms":"DUR","discount":0,"discount_type":null,"credit_rating":null,"labor_charge_type":"flat","labor_charge_default_rate":0,"qbo_sync_token":null,"qbo_currency":"USD","qbo_id":20,"qbd_id":"8000007E-1567186067","created_at":"2015-11-10T16:25:39+00:00","updated_at":"2016-06-28T14:12:16+00:00","last_serviced_date":"2016-09-15","is_bill_for_drive_time":false,"is_vip":false,"is_taxable":true,"parent_customer":"ABC
+        Corporation","referral_source":null,"agent":null,"assigned_contract":null,"payment_type":null,"tax_item_name":"TX
+        State Sales Tax","industry":null,"contacts":[{"prefix":null,"fname":"Johnny","lname":"Ives","suffix":null,"contact_type":null,"job_title":null,"department":null,"dob":null,"anniversary":null,"created_at":"2015-11-10T16:25:39+00:00","updated_at":"2016-06-28T14:12:16+00:00","is_primary":true,"phones":[{"phone":"2145551212","ext":null,"type":"Mobile","created_at":"2015-11-10T16:25:39+00:00","updated_at":"2017-08-06T13:25:23+00:00","is_mobile":true}],"emails":[{"email":"jives@servicefusion.com","class":"Personal","types_accepted":null,"created_at":"2015-11-10T16:25:39+00:00","updated_at":"2017-08-06T13:25:23+00:00"},{"email":null,"class":null,"types_accepted":null,"created_at":"2017-05-18T10:57:42+00:00","updated_at":"2017-05-18T10:57:42+00:00"}]}],"locations":[{"street_1":"2342
+        Main Street","street_2":null,"city":"Dallas","state_prov":"TX","postal_code":"75201","country":null,"nickname":null,"gate_instructions":null,"latitude":0,"longitude":0,"location_type":null,"created_at":null,"updated_at":null,"is_primary":true,"is_gated":false,"is_bill_to":true,"customer_contact":null}]}],"_expandable":["custom_fields"],"_meta":{"totalCount":247,"pageCount":25,"currentPage":1,"perPage":10}}'
+    http_version: 
+  recorded_at: Thu, 19 Dec 2019 14:22:29 GMT
+recorded_with: VCR 5.0.0
