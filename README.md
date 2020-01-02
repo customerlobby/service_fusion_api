@@ -1,6 +1,6 @@
 # ServiceFusionApi
 
-A Ruby wrapper for the Field Edge REST API.
+A Ruby wrapper for the Service Fusion REST API.
 
 ## Installation
 
