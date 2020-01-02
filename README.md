@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ### Configuration
 
-Before you can make calls to ServiceFusionApi you must configure the library with a valid partner_key & company_key or a valid OAuth access token.
+Before you can make calls to ServiceFusionApi you must configure the library with a valid OAuth access token.
 
 There are two ways to configure the  gem. You can pass a hash of configuration options when you create
 a client, or you can use a configure block.
