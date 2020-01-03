@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Customer Lobby']
   spec.email         = ['dev@customerlobby.com']
 
-  spec.summary       = 'Ruby gem for integration of Zoho Apis'
+  spec.summary       = 'Ruby gem for integration of ServiceFusion Apis'
   spec.description   = 'This gem acts a ruby sdk/wrapper for all zoho apis'
   # spec.homepage      = 'https://github.com/customerlobby/service_fusion_api'
   spec.license       = 'MIT'
