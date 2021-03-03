@@ -32,7 +32,7 @@ module ServiceFusionApi
         end
 
         if http_response.status == 429
-          raise ServiceFusionApi::RateLimitError, http_response.body
+          raise ServiceFusionApi::RateLimitError, http_response
         end
 
         data = Response.create(http_response.body)
