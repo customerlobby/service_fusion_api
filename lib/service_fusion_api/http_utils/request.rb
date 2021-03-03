@@ -30,6 +30,11 @@ module ServiceFusionApi
           request.options.timeout = 120 # read timeout
           request.options.open_timeout = 300 # connection timeout
         end
+
+        if http_response.status == 429
+          raise ServiceFusionApi::RateLimitError, http_response.body
+        end
+
         data = Response.create(http_response.body)
         response = {}
         response['items'] = data

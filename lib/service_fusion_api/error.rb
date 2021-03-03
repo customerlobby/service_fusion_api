@@ -4,4 +4,5 @@ module ServiceFusionApi
   class AuthorizationError < Error; end
   class BadRequestError < Error; end
   class RecordNotFoundError < Error; end
+  class RateLimitError < Error; end
 end

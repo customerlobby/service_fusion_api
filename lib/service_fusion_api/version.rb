@@ -2,7 +2,7 @@ module ServiceFusionApi
   class Version
     MAJOR = 0 unless defined? ServiceFusionApi::Version::MAJOR
     MINOR = 1 unless defined? ServiceFusionApi::Version::MINOR
-    PATCH = 1 unless defined? ServiceFusionApi::Version::PATCH
+    PATCH = 2 unless defined? ServiceFusionApi::Version::PATCH
 
     class << self
       # @return [String]
@@ -11,5 +11,5 @@ module ServiceFusionApi
       end
     end
   end
-  
+
 end
