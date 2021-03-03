@@ -4,6 +4,8 @@ module ServiceFusionApi
   class HttpUtils
     # Defines HTTP request methods
     module Request
+      RATE_LIMIT_STATUS_CODE = 429
+
       # Perform an HTTP GET request
       def get(path, options = {})
         request(:get, path, options)
@@ -31,7 +33,7 @@ module ServiceFusionApi
           request.options.open_timeout = 300 # connection timeout
         end
 
-        if http_response.status == 429
+        if http_response.status == RATE_LIMIT_STATUS_CODE
           raise ServiceFusionApi::RateLimitError, http_response
         end
 
