@@ -28,12 +28,12 @@ Gem::Specification.new do |spec|
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  
+
   spec.bindir        = 'bin'
   spec.executables = spec.files.grep(%r{^exe/}) {|f| File.basename(f)}
   spec.executables = spec.files.grep(%r{^bin/}) {|f| File.basename(f)}
   spec.test_files = spec.files.grep(%r{^(test|spec|features)/})
-  
+
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 1.16'
@@ -45,4 +45,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency('faraday_middleware')
   spec.add_runtime_dependency('hashie')
   spec.add_runtime_dependency('vcr')
+  spec.add_runtime_dependency('nokogiri')
 end

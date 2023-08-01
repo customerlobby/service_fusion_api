@@ -7,8 +7,8 @@ require File.expand_path('../service_fusion_api/configuration', __FILE__)
 require File.expand_path('../service_fusion_api/api', __FILE__)
 require File.expand_path('../service_fusion_api/client', __FILE__)
 require File.expand_path('../service_fusion_api/error', __FILE__)
-require File.expand_path('../faraday/auth', __FILE__)
-require File.expand_path('../faraday/raise_exception', __FILE__)
+require File.expand_path('../service_fusion_api/faraday/auth', __FILE__)
+require File.expand_path('../service_fusion_api/faraday/raise_exception', __FILE__)
 
 module ServiceFusionApi
   extend Configuration

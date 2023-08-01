@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'faraday_middleware'
-Dir[File.expand_path('../../../faraday/*.rb', __FILE__)].each { |f| require f }
+Dir[File.expand_path('../faraday/*.rb', __FILE__)].each { |f| require f }
 
 module ServiceFusionApi
   class HttpUtils
@@ -16,13 +16,13 @@ module ServiceFusionApi
 
         Faraday::Connection.new(options) do |connection|
           if access_token
-            connection.use FaradayMiddleware::ServiceFusionApiOAuth, access_token
+            connection.use ServiceFusionApi::FaradayMiddleware::Auth, access_token
           else
             connection.use Faraday::Request::BasicAuthentication, client_id, client_secret
           end
-          connection.use FaradayMiddleware::RaiseException
-          connection.use FaradayMiddleware::Mashify
-          connection.use Faraday::Response::ParseJson
+          connection.use ServiceFusionApi::FaradayMiddleware::RaiseException
+          connection.use ::FaradayMiddleware::Mashify
+          connection.use ::Faraday::Response::ParseJson
           connection.adapter(adapter)
         end
       end

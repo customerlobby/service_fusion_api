@@ -2,7 +2,7 @@ require "spec_helper"
 
 RSpec.describe ServiceFusionApi do
   it 'has a version number' do
-    expect(ServiceFusionApi::VERSION).not_to be nil
+    expect(ServiceFusionApi::Version.to_s).not_to be nil
   end
 
   it 'should init params' do
