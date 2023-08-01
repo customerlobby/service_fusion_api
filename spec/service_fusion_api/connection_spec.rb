@@ -15,7 +15,7 @@ RSpec.describe ServiceFusionApi::HttpUtils::Connection do
     client = ServiceFusionApi::Client.new(access_token: 'token')
     conn = double
     expect(Faraday::Connection).to receive(:new).and_yield(conn)
-    expect(conn).to receive(:use).with(FaradayMiddleware::ServiceFusionApiOAuth, 'token')
+    expect(conn).to receive(:use).with(ServiceFusionApi::FaradayMiddleware::Auth, 'token')
     allow(conn).to receive(:adapter)
     allow(conn).to receive(:use)
     client.send(:connection)
