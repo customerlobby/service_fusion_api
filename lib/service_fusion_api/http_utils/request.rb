@@ -37,6 +37,10 @@ module ServiceFusionApi
           raise ServiceFusionApi::RateLimitError, http_response
         end
 
+        if http_response.status == 504
+          raise ServiceFusionApi::GatewayTimeoutError, http_response.body
+        end
+
         data = Response.create(http_response.body)
         response = {}
         response['items'] = data
@@ -51,6 +55,7 @@ module ServiceFusionApi
         opts[options[:filter][:key]] = options[:filter][:value] if options.key?(:filter)
         opts['expand'] = options[:expand] if options.key?(:expand)
         opts['page'] = options[:page] if options.key?(:page)
+        opts['per-page'] = options[:"per-page"] if options.key?(:"per-page")
         opts
       end
     end
