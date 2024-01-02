@@ -5,6 +5,7 @@ module ServiceFusionApi
     # Defines HTTP request methods
     module Request
       RATE_LIMIT_STATUS_CODE = 429
+      GATEWAY_TIME_OUT_CODE = 504
 
       # Perform an HTTP GET request
       def get(path, options = {})
@@ -37,7 +38,7 @@ module ServiceFusionApi
           raise ServiceFusionApi::RateLimitError, http_response
         end
 
-        if http_response.status == 504
+        if http_response.status == GATEWAY_TIME_OUT_CODE
           raise ServiceFusionApi::GatewayTimeoutError, http_response.body
         end
 
