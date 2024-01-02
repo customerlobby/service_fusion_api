@@ -13,11 +13,13 @@ module ServiceFusionApi
         rescue Faraday::Error::ConnectionFailed, Faraday::TimeoutError => e
           raise ServiceFusionApi::ConnectionError.new(e)
         rescue Faraday::ParsingError => e
-          if e.message.squish.include? ("<body>")
+          if e.message.squish.include?("<body>")
             html = Nokogiri::HTML.parse(e.message.split('\'')[1])
             error_message = html.css("p").text
-            if error_message.include? "ID is not valid"
+            if error_message.include?("ID is not valid")
               raise ServiceFusionApi::RecordNotFoundError.new(error_message)
+            elsif error_message.include?("Gateway Time-out")
+              raise ServiceFusionApi::GatewayTimeoutError.new(error_message)
             else
               raise ServiceFusionApi::BadRequestError.new(error_message)
             end
