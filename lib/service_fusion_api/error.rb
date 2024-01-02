@@ -6,6 +6,7 @@ module ServiceFusionApi
   class AuthorizationError < Error; end
   class BadRequestError < Error; end
   class RecordNotFoundError < Error; end
+  class GatewayTimeoutError < Error; end
 
   class RateLimitError < Error
     attr_reader :rate_limit_reset_at, :status_code
