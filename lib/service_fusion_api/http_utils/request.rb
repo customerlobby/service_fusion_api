@@ -34,11 +34,13 @@ module ServiceFusionApi
           request.options.open_timeout = 300 # connection timeout
         end
 
-        if http_response.status == RATE_LIMIT_STATUS_CODE
+        # Raise an error based on the response status code
+        case http_response.status
+        when 401, 403
+          raise ServiceFusionApi::AuthorizationError, http_response
+        when RATE_LIMIT_STATUS_CODE
           raise ServiceFusionApi::RateLimitError, http_response
-        end
-
-        if http_response.status == GATEWAY_TIME_OUT_CODE
+        when GATEWAY_TIME_OUT_CODE
           raise ServiceFusionApi::GatewayTimeoutError, http_response.body
         end
 

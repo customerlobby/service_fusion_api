@@ -20,6 +20,8 @@ module ServiceFusionApi
               raise ServiceFusionApi::RecordNotFoundError.new(error_message)
             elsif error_message.include?("Gateway Time-out")
               raise ServiceFusionApi::GatewayTimeoutError.new(error_message)
+            elsif error_message.include?("It seems you don't have access to this document.")
+              raise ServiceFusionApi::AuthorizationError.new("It seems you don't have access to this document.")
             else
               raise ServiceFusionApi::BadRequestError.new(error_message)
             end
